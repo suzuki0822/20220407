@@ -1,0 +1,439 @@
+/* html {
+    font-size: 62.5%;
+} */
+
+@charset "utf-8";
+
+h2 {
+    font-family: '小塚ゴシック Pro', 'Kozuka Gothic Pro', sans-serif;
+    ;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: fixed;
+    z-index: 9999;
+}
+
+.top_text {
+    position: absolute;
+    top: 50%;
+    background-color: white;
+    left: 0%;
+    padding: 10px;
+    font-size: 60px;
+    margin: 60px;
+    white-space: nowrap;
+}
+
+
+.main-visual {
+    position: relative;
+}
+
+.main-visual img {
+    width: 100%;
+    height: 100%;
+}
+
+#news {
+    max-width: 1000px;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.news_title {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+#news .news_lists .news_box:first-child {
+    border-top: solid 1px #210000;
+}
+
+#news .news_lists .news_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 0;
+    border-bottom: solid 1px #210000;
+}
+
+#news .top_link_btn {
+    text-align: center;
+    margin-top: 2.5em;
+}
+
+.top_link_btn a {
+    display: inline-block;
+    min-width: 245px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border: solid 1px #210000;
+    position: relative;
+}
+
+.bg_red {
+    background-color: #210000;
+}
+
+main section {
+    display: block;
+    width: 100%;
+    padding: 100px 0;
+}
+
+#about>div {
+    color: #ffffff;
+    text-align: center;
+}
+
+.no_padding {
+    padding: 0;
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about>div>h1 {
+    font-size: 40px;
+}
+
+#athome {
+    width: 50%;
+    margin-right: 0;
+}
+
+#athome>picture>img {
+    width: 100%;
+    height: 100%;
+}
+
+#athome>picture {
+    display: block;
+    height: 100%;
+}
+
+#athome {
+    padding: 0;
+    position: relative;
+}
+
+#athome>div {
+    width: 100%;
+}
+
+#athome>div {
+    position: absolute;
+    top: 0;
+}
+
+#atshop {
+    width: 50%;
+    margin-right: 0;
+    padding: 0;
+}
+
+#atshop>picture>img {
+    width: 100%;
+    height: 100%;
+}
+
+#atshop>picture {
+    display: block;
+    height: 100%;
+}
+
+.picture_box {
+    position: relative;
+}
+
+.picture_text {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    right: 0;
+    padding: 10px;
+    font-size: 40px;
+    margin: 60px;
+}
+
+.picture_box_btn {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    padding: 10px;
+    margin: 60px;
+}
+
+.picture_box_btn_text {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding: 10px;
+}
+
+#blend {
+    position: relative;
+}
+
+.blend_img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+
+.blend_text {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    right: 0;
+    padding: 10px;
+    font-size: 40px;
+    margin: 60px;
+    white-space: nowrap;
+}
+
+.beans_title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    height: 200px;
+    background-color: #210000;
+    padding: 100px;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+    /*横幅94%で左右に余白を持たせて中央寄せ*/
+    width: 94%;
+    margin: 0 auto;
+}
+
+.slider img {
+    width: 100%;
+    /*スライダー内の画像を横幅100%に*/
+    height: auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin: 0 10px;
+}
+
+
+.slick-prev:before, .slick-next:before {
+    color: #000;
+    /*黒にする*/
+    opacity: 1;
+    /*デフォルトは.75が指定されている*/
+}
+
+.article_box.channel .article_box_img, .article_box.channel .article_box_img img {
+    border-radius: 10px 10px 0 0;
+}
+
+.article_box_container {
+    height: 205px;
+    padding: 10px;
+    background-color: #eee7c2;
+}
+
+.article_box_category {
+    margin-top: 0;
+}
+
+
+.openbtn4 {
+    position: fixed;
+    background: #210000;
+    z-index: 9999;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    right: 0;
+}
+
+/*ボタン内側*/
+.openbtn4 span {
+    display: inline-block;
+    transition: all .4s;
+    /*アニメーションの設定*/
+    position: absolute;
+    left: 23px;
+    height: 5px;
+    border-radius: 5px;
+    background: #fff;
+    width: 45%;
+}
+
+
+.openbtn4 span:nth-of-type(1) {
+    top: 15px;
+}
+
+.openbtn4 span:nth-of-type(2) {
+    top: 29px;
+}
+
+.openbtn4 span:nth-of-type(3) {
+    top: 43px;
+}
+
+.openbtn4 span:nth-of-type(3)::after {
+    content: "Menu";
+    /*3つ目の要素のafterにMenu表示を指定*/
+    position: absolute;
+    top: 7px;
+    left: -4px;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+
+.openbtn4.active span:nth-of-type(1) {
+    top: 25px;
+    left: 28px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn4.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.openbtn4.active span:nth-of-type(3) {
+    top: 37px;
+    left: 28px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+.openbtn4.active span:nth-of-type(3)::after {
+    content: "Close";
+    /*3つ目の要素のafterにClose表示を指定*/
+    transform: translateY(0) rotate(-45deg);
+    top: 10px;
+    left: 6px;
+}
+
+
+#g-nav {
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position: fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+    top: -120%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /*ナビの高さ*/
+    background: #4b4343;
+    /*動き*/
+    transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive {
+    top: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list {
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    /*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li {
+    list-style: none;
+    text-align: center;
+}
+
+#g-nav li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.contact_btn {
+    position: fixed;
+    background: #665454;
+    z-index: 9999;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    right: 80px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.fa-envelope {
+    font-size: 3rem;
+    color: white;
+}
+
+div.contact_btn p {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+#about>div>p {
+    margin: 10px;
+}
+
+#about>div>div>a {
+    color: #fff;
+    border: solid 1px #ffffff;
+    margin-top: 10px;
+}
